@@ -1,4 +1,7 @@
 require "bank_account.rb"
+
+cassie = BankAccount.new("Cassie")
+
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
 
