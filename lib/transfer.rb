@@ -1,8 +1,5 @@
 require_relative "bank_account.rb"
 
-cassie = BankAccount.new("Cassie")
-puts cassie.name
-
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
 
@@ -13,7 +10,7 @@ class Transfer
     @amount = amount
   end
 
-  def valid?
+  def isvalid?
     if @sender.valid? == true && @receiver.valid? == true
       return true
     end
