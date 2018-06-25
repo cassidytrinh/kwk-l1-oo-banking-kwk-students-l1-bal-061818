@@ -1,4 +1,4 @@
-require_relative "lib/bank_account.rb"
+require_relative "bank_account.rb"
 
 cassie = BankAccount.new("Cassie")
 puts cassie.name
